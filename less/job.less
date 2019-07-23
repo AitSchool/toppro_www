@@ -1,0 +1,89 @@
+@import url(base.less);
+@import url(common.less);
+
+.pg_join{
+    padding-top: 70px;
+    h2{
+        font-size: 42px;
+        color: #3f464b;
+        line-height: 50px;
+        span{
+            font-size: 18px;
+            color: #b1b1b5;
+            margin-left: 20px;
+        }
+    }
+
+    section{
+    	width: 670px;
+    	margin: 50px 0;
+    	overflow: hidden;
+
+    	>h3{
+	    	height: 30px;
+	    	line-height: 30px;
+    		font-size: 28px;
+    		font-weight: 400;
+    		color: #333;
+
+    		.pg_join-price{
+    			color: #fd5f39;
+    		}
+    	}
+
+    	>h4{
+    		height: 30px;
+    		margin-top: 20px;
+    		line-height: 30px;
+    		font-size: 15px;
+    		color: #333;
+    	}
+
+    	>ul{
+    		color: #404c5f;
+
+    		>li{
+    			line-height: 25px;
+    			font-size: 15px;
+    		}
+    	}
+
+        .pg_join-aside{
+            height: 20px;
+            line-height: 20px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999999;
+
+            .pg_join-wechat{
+                position: relative;
+                color: #999999;
+
+                &:hover{
+                    .pg_join-linkman{
+                        display: block;
+                    }
+                }
+
+                .pg_join-wechat-icon{
+                    display: inline-block;
+                    content: '';
+                    height: 20px;
+                    width: 20px;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                    background: url('./../images/wechat.svg') center center ~'/'  cover;
+                }
+
+                .pg_join-linkman{
+                    display: none;
+                    position: absolute;
+                    left: -50%;
+                    top: -200px;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

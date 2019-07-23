@@ -1,0 +1,49 @@
+@charset "utf-8";
+.container .banner {
+  position: relative;
+  padding: 0.82666667rem 0.33333333rem;
+  background-color: #fff;
+  background-image: url('../images/propagate_bg.jpg');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  color: #2e2e2e;
+}
+.container .banner > h1 {
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 0.42666667rem;
+  font-weight: 600;
+}
+.container .banner > p {
+  line-height: 1.5em;
+  margin-bottom: 0.4rem;
+  font-size: 0.32rem;
+  font-weight: 600;
+}
+.container .banner > p:last-child {
+  margin-bottom: 0;
+}
+.container .banner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0.10666667rem;
+  left: 4%;
+  width: 92%;
+  height: 0;
+  border-bottom: 0.05333333rem dashed #ffffff;
+}
+.container img {
+  width: 100%;
+}
+@media screen and (min-width: 750px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  html {
+    font-size: 75px !important;
+    background: #fbfafa;
+  }
+}
